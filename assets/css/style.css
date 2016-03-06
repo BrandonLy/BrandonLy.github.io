@@ -35,8 +35,12 @@
 body {
   background-color: #242424;
   margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
+  padding: 0; }
+
+.page-wrapper {
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+  position: absolute; }
 
 header {
   display: flex;
