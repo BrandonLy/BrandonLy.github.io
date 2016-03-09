@@ -175,25 +175,75 @@ nav {
     height: 180px;
     position: relative;
     text-align: center;
-    margin: 15px 20px; }
+    margin: 15px 20px;
+    overflow: hidden; }
+    .work-wrapper .work-item:hover .overlay {
+      transition: 600ms;
+      background-color: rgba(24, 25, 25, 0.8); }
+    .work-wrapper .work-item:hover .work-desc {
+      transition: 500ms;
+      color: white; }
+    .work-wrapper .work-item:hover .rectangle {
+      transition: 600ms;
+      top: 160px;
+      right: 250px; }
+    .work-wrapper .work-item:hover img {
+      transition: 300ms;
+      top: 0;
+      left: 0;
+      width: 310px;
+      height: 180px; }
     .work-wrapper .work-item .title-wrapper {
       position: absolute;
       width: 310px;
       height: 180px;
-      text-align: center;
-      background-color: white;
-      display: none; }
+      text-align: center; }
     .work-wrapper .work-item .work-title {
       position: absolute;
-      z-index: 0;
-      top: 40px;
-      left: 0;
-      right: 0;
-      color: #CACACA;
+      z-index: 10;
+      top: 10px;
+      left: 20px;
+      color: white;
       font-family: "brandon_grotesquemedium";
-      font-size: 30px;
+      font-size: 20px;
       letter-spacing: 2px;
       text-transform: uppercase; }
+    .work-wrapper .work-item .work-desc {
+      transition: 500ms;
+      text-transform: uppercase;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0);
+      font-family: "brandon_grotesque_regularRg";
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 11; }
+    .work-wrapper .work-item img {
+      transition: 300ms;
+      position: absolute;
+      top: -20px;
+      left: -50px;
+      height: 200px;
+      width: 400px; }
+    .work-wrapper .work-item .overlay {
+      transition: 500ms;
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      background-color: rgba(61, 61, 61, 0.5);
+      width: 310px;
+      height: 180px; }
+    .work-wrapper .work-item .rectangle {
+      transition: 600ms;
+      position: absolute;
+      top: -240px;
+      right: -340px;
+      z-index: 12;
+      width: 400px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: rotate(45deg); }
 
 /* Contact */
 .contact {
