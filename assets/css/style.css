@@ -40,7 +40,11 @@ body {
 .page-wrapper {
   overflow-x: hidden;
   overflow-y: scroll !important;
-  position: absolute; }
+  position: absolute;
+  transition: 300ms;
+  top: 0;
+  right: 0;
+  min-width: 100%; }
 
 header {
   display: flex;
@@ -63,12 +67,22 @@ nav {
     font-size: 17px;
     font-family: "brandon_grotesque_regularRg";
     text-transform: uppercase;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1.5px;
+    border-bottom: rgba(255, 255, 255, 0) solid 2px;
+    margin: 10px;
+    height: 50px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    transition: 300ms; }
+    nav a:hover {
+      transition: 300ms;
+      border-bottom: white solid 2px;
+      padding-bottom: 7px; }
   nav li {
     list-style: none;
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .hamburger-icon {
   display: none; }
@@ -114,6 +128,7 @@ nav {
 
 /* About */
 .about {
+  padding-top: 10vh;
   margin-bottom: 40vh; }
   .about .about-wrapper {
     display: flex;
@@ -143,6 +158,9 @@ nav {
       margin: 5px; }
 
 /* Work */
+.work {
+  padding-top: 10vh; }
+
 .work-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -177,6 +195,7 @@ nav {
 
 /* Contact */
 .contact {
+  padding-top: 10vh;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 300;
@@ -208,26 +227,32 @@ footer {
   /* Mobile Nav Styles */
   nav {
     transition: 300ms;
-    position: absolute;
-    background-color: rgba(200, 200, 200, 0.6);
+    position: fixed;
+    background-color: #292929;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    min-width: 80%;
+    width: 250px;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     left: 100%;
-    top: 0; }
+    top: 0;
+    z-index: 9999; }
     nav li {
       padding: 20px; }
 
   .open_nav {
     transition: 300ms;
-    left: 20%; }
+    left: calc(100% - 250px); }
+
+  .menu_open {
+    transition: 300ms;
+    right: 250px; }
 
   .hamburger-icon {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     display: block;
@@ -266,7 +291,7 @@ footer {
 
   .is_active {
     transition: 300ms;
-    right: 85%; }
+    transform: translateX(-250px); }
     .is_active .line {
       display: inline-block;
       background-color: transparent;
