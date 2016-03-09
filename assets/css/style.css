@@ -35,7 +35,8 @@
 body {
   background-color: #242424;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 .page-wrapper {
   overflow-x: hidden;
@@ -50,7 +51,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px; }
+  margin-top: 30px;
+  max-width: 100%; }
 
 .logo-thumbnail {
   background-image: url("../img/logo-thumbnail.png");
@@ -316,7 +318,8 @@ footer {
     .about-wrapper .what-i-do {
       margin: 0 auto;
       padding: 0;
-      border: 0; }
+      border: 0;
+      max-width: 90%; }
     .about-wrapper .skills {
       margin: 0 auto;
       padding: 0; }
