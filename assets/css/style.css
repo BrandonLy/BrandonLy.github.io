@@ -71,7 +71,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     border-bottom: rgba(255, 255, 255, 0) solid 2px;
-    margin: 10px;
+    margin: 10px 20px;
     height: 50px;
     overflow: hidden;
     padding-bottom: 15px;
@@ -116,15 +116,16 @@ nav {
     font-family: "brandon_grotesquemedium";
     font-size: 40px;
     color: #CACACA;
-    letter-spacing: 2px;
+    line-height: 20px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px; }
   .tagline .title {
     font-family: "brandon_grotesqueRgIt";
     font-size: 20px;
     color: #2479BE;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0; }
 
@@ -143,23 +144,27 @@ nav {
     text-align: center;
     margin: 0 auto; }
     .about .about-wrapper .section-title {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-bottom: 40px; }
   .about .what-i-do {
-    width: 450px;
+    width: 350px;
     padding-right: 50px;
     border-right-color: #CACACA;
     border-right-style: solid;
     border-right-width: 1px;
     padding-left: 50px; }
+    .about .what-i-do p {
+      line-height: 25px;
+      letter-spacing: 1px; }
   .about .skills {
-    width: 450px;
+    width: 350px;
     padding-left: 50px;
     padding-right: 50px; }
     .about .skills ul {
       padding-left: 0; }
     .about .skills li {
       list-style: none;
-      margin: 5px; }
+      margin: 8px 5px; }
 
 /* Work */
 .work {
@@ -249,7 +254,7 @@ nav {
 
 /* Contact */
 .contact {
-  padding-top: 10vh;
+  padding-top: 15vh;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 300;
@@ -274,7 +279,7 @@ footer {
   text-align: center;
   text-transform: uppercase; }
   footer p {
-    padding-top: 30px; }
+    padding-top: 36px; }
 
 /* Mobile Styles */
 @media screen and (max-width: 1000px) {
