@@ -1,0 +1,216 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+/* Micro reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif; }
+
+.content-wrapper {
+  background-color: #3D73DB;
+  background-image: linear-gradient(-180deg, #3E80D7 2%, #372D9B 100%);
+  text-transform: uppercase;
+  color: white;
+  font-family: "Times New Roman", sans-serif;
+  padding-top: 52px;
+  text-align: center; }
+  .content-wrapper p {
+    font-size: 15px;
+    letter-spacing: 0.53px;
+    line-height: 20px; }
+  .content-wrapper a {
+    text-decoration: none;
+    color: white; }
+
+.ccsd {
+  background-image: linear-gradient(-180deg, #36B9C6 2%, #17636B 100%);
+  padding-bottom: 30px; }
+
+.logo {
+  background-image: url("../img/ccsd.png");
+  height: 63px;
+  width: 110px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto 32px auto; }
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.53;
+  margin-bottom: 36px; }
+
+.line {
+  height: 1px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: white; }
+
+.single-item {
+  margin: 5%; }
+  .single-item p {
+    padding-top: 4%; }
+
+.icons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .icons-wrapper a {
+    display: block;
+    width: 39%;
+    margin: 2%; }
+
+.social-media-icons {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 50px; }
+  .social-media-icons a {
+    display: block;
+    max-width: 20%;
+    margin: 2.5%; }
+
+.section-title {
+  font-size: 25px;
+  letter-spacing: 0.88px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 80%; }
+
+.cal {
+  max-width: 90vw;
+  margin: 0 auto;
+  height: 60vh;
+  padding-bottom: 50px; }
+
+.meeting {
+  letter-spacing: 0.53px;
+  font-size: 15px;
+  padding: 15px;
+  border-bottom: white solid 1px;
+  max-width: 60%;
+  margin: 0 auto; }
+  .meeting:last-child {
+    border: none; }
+  .meeting .meeting-time {
+    font-weight: bold;
+    line-height: 17px; }
+  .meeting .meeting-desc {
+    line-height: 16px; }
+  .meeting p {
+    padding: 5px; }
+
+.board-p {
+  max-width: 80%;
+  margin: 15px auto;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize; }
+
+.board-meeting-link {
+  display: block;
+  text-decoration: underline !important;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+  text-transform: capitalize; }
+
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 20px 0; }
+  ul .board-meeting-link {
+    min-width: 100%;
+    padding: 15px; }
+
+.contact-heading {
+  font-weight: bold;
+  font-size: 25px;
+  color: #FFFFFF;
+  letter-spacing: 0.88px;
+  line-height: 30px;
+  text-decoration: underline; }
+
+.back-button {
+  position: absolute;
+  top: 40px;
+  left: 30px; }
+  .back-button p {
+    font-size: 10px;
+    letter-spacing: 0.35px; }
+
+.pledge-desc {
+  text-transform: capitalize;
+  max-width: 80%;
+  margin: 20px auto; }
+
+.form-info .pledge-desc {
+  text-align: left; }
+
+form {
+  max-width: 80%;
+  margin: 0 auto; }
+  form label {
+    font-size: 15px;
+    letter-spacing: 0.53px;
+    line-height: 30px;
+    display: block;
+    text-align: left;
+    margin-top: 20px; }
+  form input {
+    display: block;
+    text-align: left;
+    min-width: 100%;
+    background-color: transparent;
+    border: white solid 2px;
+    height: 30px; }
+  form input[type=checkbox] {
+    display: inline-block;
+    min-width: 20%;
+    background-color: transparent;
+    margin-top: 10px;
+    position: relative;
+    top: 10px; }
+
+.more-information-section label {
+  max-width: 70%;
+  display: inline-block; }
+.more-information-section p {
+  margin-top: 15px;
+  text-transform: capitalize;
+  text-align: left; }
+.more-information-section .submit-button {
+  min-width: 80%;
+  display: block;
+  margin: 20px auto;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 15px; }
+
+/*# sourceMappingURL=ionic.app.css.map */

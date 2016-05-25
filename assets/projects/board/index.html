@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>CCSD Board of Directors | Home</title>
+
+  <link href="css/ionic.app.css" rel="stylesheet">
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers/main.js"></script>
+</head>
+
+<!-- Set the angular app here -->
+<body ng-app="CCSD_Board">
+  <ion-pane>
+
+    <!-- mainCtrl scope starts here -->
+    <div ng-controller="mainCtrl">
+
+      <!-- Anything that is visible on the page should be inside the <ion-content> </ion-content> tags -->
+      <ion-content scroll="false">
+
+      <div class="content-wrapper ccsd">
+        <div class="logo"></div>
+
+        <div class="line"></div>
+
+        <a href="pledge.html"><div class="single-item">
+          <img src="img/pledge.png" alt="pledge of achievement button">
+          <p>Pledge of Achievement</p>
+        </div></a>
+
+        <div class="line"></div>
+
+        <h1 class="section-title">Trustees</h1>
+
+        <div class="icons-wrapper">
+          <a onclick="window.sessionStorage.setItem(&apos;pageSection&apos;, &apos;upcoming&apos;)" href="board.html"><div class="single-item">
+            <img src="img/events.png" alt="upcoming board meetings">
+            <p>Upcoming Board Meetings</p>
+          </div></a>
+          <a onclick="window.sessionStorage.setItem(&apos;pageSection&apos;, &apos;board-meetings&apos;)" href="board.html"><div class="single-item">
+            <img src="img/meetings.png" alt="board meetings button">
+            <p>Board Meetings</p>
+          </div></a>
+          <a onclick="window.sessionStorage.setItem(&apos;pageSection&apos;, &apos;know&apos;)" href="board.html"><div class="single-item">
+            <img src="img/partnership.png" alt="get to know button">
+            <p>Get to know</p>
+          </div></a>
+          <a onclick="window.sessionStorage.setItem(&apos;pageSection&apos;, &apos;maps&apos;)" href="board.html"><div class="single-item">
+            <img src="img/map.png" alt="maps button">
+            <p>Maps</p>
+          </div></a>
+          <a onclick="window.sessionStorage.setItem(&apos;pageSection&apos;, &apos;contact&apos;)" href="board.html"><div class="single-item">
+            <img src="img/contact.png" alt="contact button">
+            <p>Contact</p>
+          </div></a>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="icons-wrapper">
+          <a href="http://ccsd.net/district/faq/"><div class="single-item">
+            <img src="img/faq.png" alt="faq button">
+            <p>FAQ</p>
+          </div></a>
+          <a href="http://newsroom.ccsd.net/news-feed/"><div class="single-item">
+            <img src="img/news.png" alt="news button">
+            <p>Newsfeed</p>
+          </div></a>
+          <a href="magnet-index.html"><div class="single-item">
+            <img src="img/choice.png" alt="magnet schools button">
+            <p>Magnet Schools</p>
+          </div></a>
+          <a href="http://teachvegas.ccsd.net/teaching/overview/"><div class="single-item">
+            <img src="img/teach.png" alt="teach vegas button">
+            <p>Teach Vegas</p>
+          </div></a>
+          <a href="http://ccsd.net/students/bully/"><div class="single-item">
+            <img src="img/report.png" alt="report a bully button">
+            <p>Report a Bully</p>
+          </div></a>
+          <a href="http://ccsd.net/district/calendar/"><div class="single-item">
+            <img src="img/events.png" alt="calendars button">
+            <p>Calendars</p>
+          </div></a>
+          <a href="http://ccsd.net/departments/food-service/school-lunch-menus"><div class="single-item">
+            <img src="img/lunch.png" alt="school lunch button">
+            <p>School Lunch Menu</p>
+          </div></a>
+          <a href="http://faces.ccsd.net"><div class="single-item">
+            <img src="img/family.png" alt="family button">
+            <p>Faces - <br>
+            Family &amp; <br>
+            Community<br>
+            Engagement</p>
+          </div></a>
+        </div>
+
+        <div class="line"></div>
+
+        <p>Connect and Subscribe</p>
+
+        <div class="social-media-icons">
+          <a href="https://twitter.com/#!ClarkCountySch"><img src="img/twitter-v2.png" alt="twitter logo"></a>
+          <a href="https://www.facebook.com/pages/Clark-County-School-District/345886377995"><img src="img/facebook-v2.png" alt="facebook logo"></a>
+          <a href="http://ccsd.net/district/rss/feeds/"><img src="img/rss-v2.png" alt="rss logo"></a>
+          <a href="http://www.flickr.com/photos/76062911@N05/"><img src="img/flickr-v2.png" alt="flickr logo"></a>
+        </div>
+
+      </div>
+
+      </ion-content>
+    <!-- mainCtrl scope ends here -->
+
+    </div>
+
+
+
+  </ion-pane>
+
+</body>
+
+</html>

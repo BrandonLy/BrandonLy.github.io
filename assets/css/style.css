@@ -156,6 +156,8 @@ nav {
     .about .what-i-do p {
       line-height: 25px;
       letter-spacing: 1px; }
+    .about .what-i-do a {
+      color: #2479BE; }
   .about .skills {
     width: 350px;
     padding-left: 50px;
